@@ -21,7 +21,8 @@ header {
 /* header inner */
 header .header-inner {
   height: 52px;
-
+  font: var(--label-m-500);
+  color: var(--white-alpha-70);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,22 +46,22 @@ nav .list {
 
 nav a {
   display: inline-block;
-
   font: var(--label-m-500);
   color: var(--white-alpha-70);
   text-decoration: none;
-
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
   transition: 0.2s ease;
 }
 
 /* active */
-nav .intro {
+nav a:hover,
+nav a.intro {
   padding-bottom: 4px;
-
   font: var(--label-m-700);
   color: var(--white);
-
   border-bottom: 3px solid var(--white);
+  transition: 0.2s ease;
 }
 
 /* button */
