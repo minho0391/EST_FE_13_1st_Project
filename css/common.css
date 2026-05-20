@@ -324,6 +324,12 @@ html {
   .container {
     width: calc(100% - 40px);
   }
+  nav .list {
+    gap: 16px;
+  }
+  .btn-md {
+    padding: 8px 16px;
+  }
 }
 
 /* mobile */
