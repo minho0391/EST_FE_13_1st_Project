@@ -318,3 +318,17 @@ html {
   color: var(--white);
 }
 /* #endregion */
+/* 반응형 */
+/* tablet */
+@media (max-width: 1024px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
