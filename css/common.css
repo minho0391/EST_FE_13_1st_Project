@@ -319,53 +319,108 @@ html {
 }
 /* #endregion */
 /* 반응형 */
-/* ========================= Tablet ========================= */
+/* =========================
+Tablet
+========================= */
+
 @media (max-width: 1024px) {
   /* layout */
   .container {
     width: calc(100% - 40px);
   }
+
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .section-group {
-    gap: 80px;
+    gap: 72px;
     padding: 80px 0;
-  } /* header */
+  }
+
+  /* header */
   header {
     height: 80px;
   }
+
   header .header-inner {
     height: 48px;
   }
+
   .logo img {
     width: 150px;
     height: auto;
-  } /* nav */
+  }
+
   nav .list {
     gap: 16px;
   }
+
   nav a {
     font: var(--label-m-500);
-  } /* button */
+  }
+
+  /* button */
   .btn-md {
     padding: 8px 16px;
     font: var(--label-m-500);
-  } /* card */
+  }
+
+  /* card */
   .card {
-    padding: 32px;
+    padding: 28px;
     gap: 20px;
   }
-}
-@media (max-width: 1024px) {
-  .container {
-    width: calc(100% - 40px);
-  }
-  nav .list {
-    gap: 16px;
-  }
-  .btn-md {
-    padding: 8px 16px;
-  }
-}
 
+  .card-tall {
+    height: auto;
+  }
+
+  .card-medium {
+    height: auto;
+  }
+
+  /* common gap */
+  .gap-l {
+    gap: 24px;
+  }
+
+  .gap-m {
+    gap: 20px;
+  }
+
+  .gap-s {
+    gap: 12px;
+  }
+
+  /* typography utility */
+  .display-700,
+  .display-500 {
+    font: var(--heading-l);
+  }
+
+  .heading-l,
+  .heading-l-tight {
+    font: var(--heading-m);
+  }
+
+  .heading-m {
+    font: var(--heading-s);
+  }
+
+  .heading-s {
+    font: var(--heading-x-x-s);
+  }
+
+  .lead-m {
+    font: var(--body-l);
+  }
+
+  .body-l {
+    font: var(--body-m-plus-400);
+  }
+}
 /* mobile */
 @media (max-width: 767px) {
   .container {
