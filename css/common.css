@@ -324,101 +324,178 @@ Tablet
 ========================= */
 
 @media (max-width: 1024px) {
-  /* layout */
-  .container {
-    width: calc(100% - 40px);
+  /* 기존 작성된 내용 유지 */
+
+  /* hero */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+    gap: 48px;
   }
 
-  section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .hero-section .hero-content-box {
+    width: 100%;
+    min-width: unset;
   }
 
-  .section-group {
-    gap: 72px;
-    padding: 80px 0;
+  .hero-section .hero-title {
+    width: 100%;
   }
 
-  /* header */
-  header {
-    height: 80px;
+  .hero-section .image-box {
+    width: 100%;
+    min-width: unset;
+    height: 360px;
   }
 
-  header .header-inner {
-    height: 48px;
+  .hero-section .hero-stats-card {
+    left: 16px;
+    bottom: -20px;
   }
 
-  .logo img {
-    width: 150px;
+  /* 숫자 데이터 */
+  .trust-section .text-group .data-box {
+    width: 100%;
     height: auto;
   }
 
-  nav .list {
+  .trust-section .data-list {
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 32px;
+  }
+
+  .trust-section .data-list li {
+    flex: 1 1 40%;
     gap: 16px;
   }
 
-  nav a {
-    font: var(--label-m-500);
-  }
-
-  /* button */
-  .btn-md {
-    padding: 8px 16px;
-    font: var(--label-m-500);
-  }
-
-  /* card */
-  .card {
-    padding: 28px;
-    gap: 20px;
-  }
-
-  .card-tall {
+  /* 차별화 요소 */
+  .differentiator-section .container.horizontal.card-tall {
+    grid-template-columns: 1fr;
     height: auto;
   }
 
-  .card-medium {
+  .differentiator-section .vertical-card-item {
+    min-height: 240px;
+  }
+
+  /* grow 클래스 */
+  .grow-2 {
+    min-width: unset;
+  }
+
+  /* 대표 인기 코스 */
+  .programs-section-group .program-card-wrapper-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .programs-section-group .image-card-big-item {
+    width: 100%;
     height: auto;
   }
 
-  /* common gap */
-  .gap-l {
-    gap: 24px;
+  .programs-section-group .image-card-big-item .program-information-box,
+  .programs-section-group .image-card-big-item .clip-overtext-box,
+  .programs-section-group .image-card-big-item .additional-information-list {
+    width: 100%;
   }
 
-  .gap-m {
-    gap: 20px;
+  .programs-section-group .image-card-big-item .content-box {
+    height: auto;
+    padding: 24px;
   }
 
-  .gap-s {
-    gap: 12px;
+  /* 전체 교육 과정 */
+  .programs-section-group .all-courses-list {
+    flex-direction: column;
   }
 
-  /* typography utility */
-  .display-700,
-  .display-500 {
-    font: var(--heading-l);
+  .programs-section-group .icon-vertical-card {
+    width: 100%;
   }
 
-  .heading-l,
-  .heading-l-tight {
-    font: var(--heading-m);
+  /* 4단계 커리큘럼 */
+  .programs-section-group .curriculum-list-list {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .heading-m {
-    font: var(--heading-s);
+  .programs-section-group .icon-vertical-card-tag,
+  .programs-section-group .icon-vertical-card-tag-blue {
+    width: calc(50% - 12px);
+    height: auto;
   }
 
-  .heading-s {
-    font: var(--heading-x-x-s);
+  /* 후기 */
+  .testimonial-section .testimonial-list {
+    flex-wrap: wrap;
+    height: auto;
   }
 
-  .lead-m {
-    font: var(--body-l);
+  .testimonial-section .testimonial-item {
+    flex: 1 1 calc(50% - 12px);
   }
 
-  .body-l {
-    font: var(--body-m-plus-400);
+  /* 지원자격 */
+  .requirements-section .container {
+    flex-direction: column;
+  }
+
+  .requirements-section .requirements-intro {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .requirements-section .requirements-card-layout {
+    width: 100%;
+  }
+
+  /* FAQ / 뉴스 */
+  .faq-news-section .container {
+    flex-direction: column;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .news-content * {
+    max-width: 100%;
+  }
+
+  /* 최종 CTA */
+  .final-cta-container.vertical {
+    padding: 40px 24px;
+    border-radius: 24px;
+  }
+
+  .final-cta-buttons.horizontal {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .final-cta-buttons a {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* footer */
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footer-category {
+    flex: 1 1 40%;
+  }
+
+  /* 고정 버튼 */
+  .fixed-ui {
+    right: 24px;
+    bottom: 24px;
   }
 }
 /* mobile */
